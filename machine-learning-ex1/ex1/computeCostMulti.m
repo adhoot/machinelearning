@@ -6,7 +6,7 @@ function J = computeCostMulti(X, y, theta)
 % Initialize some useful values
 m = length(y); % number of training examples
 
-% You need to return the following variables correctly 
+% You need to return the following variables correctly
 J = 0;
 
 % ====================== YOUR CODE HERE ======================
@@ -14,7 +14,9 @@ J = 0;
 %               You should set J to the cost.
 
 
-
+h = X * theta;
+diff = h - y;
+J = 1 / ( 2 * m) * sum (diff .* diff);
 
 
 % =========================================================================
