@@ -12,12 +12,11 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
-
-
-
-
-
-
+%X12=X(:,[2:3]);
+X12=X;
+plot(X12(:,1)(y==1), X12(:,2)(y==1),'k+','LineWidth', 2, 'MarkerSize', 7)
+plot(X12(:,1)(y==0), X12(:,2)(y==0),'ko','MarkerFaceColor', 'y', ...
+'MarkerSize', 7)
 
 
 % =========================================================================
